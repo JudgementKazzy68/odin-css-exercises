@@ -1,14 +1,15 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/*makes para AND small-para black and extra bold */
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
-
-.small-para {
+/*solved by chaining selectors, giving higher specificity - 
+another solution could be .p.small-para*/
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
@@ -16,8 +17,8 @@ body {
 .para {
   font-size: 22px;
 }
-
-.confirm {
+/*Instead of class, I used ID selector, raising specificity*/
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -28,8 +29,8 @@ body {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
-
-.child {
+/*Added .text selector*/
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
