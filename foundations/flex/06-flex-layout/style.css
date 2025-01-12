@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -16,11 +19,61 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
-input {
+input {/home/gaboo/repos/odin-css-exercises/foundations/flex/06-flex-layout/desired-outcome.png
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul {
+  list-style: none;
+  margin: 16px;
+  padding: 0px;
+}
+
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+a:link {
+  text-decoration: none;
+  color: grey;
+}
+
+a:visited {
+  color: grey;
+}
+
+.header .left-links,
+.header .right-links,
+.footer .left-links,
+.footer .right-links {
+  display: flex;
+  gap: 16px;
+  margin: 16;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  align-items: flex-end;
+  background-color: lightgrey;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
